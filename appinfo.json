@@ -12,6 +12,7 @@
 	"splashicon": "spaz-icon-flat-128.png",
 	"miniicon": "miniicon.png",
 	"splashBackground":"spazhd-splash.png",
+	"dockMode":true,
 	"uiRevision":2,
 
 	"testBuild":true,

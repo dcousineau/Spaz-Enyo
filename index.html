@@ -7,7 +7,13 @@
 <body>
 	<script>
 		sc.setDumpLevel(0);
-		var spazapp = new Spaz().renderInto(document.body);
+		if (window.PalmSystem && enyo.windowParams
+    		&& enyo.windowParams.windowType == "dockModeWindow"
+    		&& enyo.windowParams.dockMode == true){
+    		var spazapp = new SpazExhibition().renderInto(document.body);    
+	    } else {
+		    var spazapp = new Spaz().renderInto(document.body);
+	    }
 	</script>
 
 	<div id="aboutContent" style="display: none">
